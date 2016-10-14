@@ -1,0 +1,106 @@
+/* GENERAL */
+
+/*colors to use: #BF7636 #CF8A2B #262014 #B4C4D9 #8F9FBF*/
+/*alternate colors: #BCAAA4 #795548 #4E342E #4DB6AC #B2DFDB*/
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700|Roboto:400,700,900');
+
+body {
+  background-color: #B2DFDB;
+}
+
+h1 p {
+  color: #262014;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+/* NAV */
+
+#ap-logo {
+  height: 45px;
+}
+
+.navbar-default {
+  background-color: transparent;
+  border: none;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover {
+  color: #fff;
+  background-color: #4E342E;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #4E342E;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.25em;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: #BCAAA4;
+}
+
+a.navbar-brand {
+  display: inline-block;
+  height: 40px;
+  width: 210px;
+}
+
+.navbar-brand {
+  background-image: url("../img/name-01.png");
+  background-repeat: no-repeat;
+}
+
+/* JUMBOTRON */
+
+
+
+/* ASSETS */
+
+.asset-row, .call-to-action-row {
+  margin-top: 5%;
+}
+
+.asset-flex-parent {
+  display: flex;
+  height: 360px;
+  background-color: #888;
+  align-content: center;
+}
+
+.asset-flex-parent h1, .asset-flex-parent p {
+  height: 100px;
+  background-color: #444;
+}
+
+.asset-image {
+  border: 8px solid #4DB6AC;
+}
+
+.call-to-action-row {
+  background-color: #795548;
+  color: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.btn-call-to-action {
+  background-color: #4DB6AC;
+}
+
+/* FOOTER */
+
+.footer-row {
+  height: 200px;
+  background-color: #4E342E;
+  color: #fff;
+}
