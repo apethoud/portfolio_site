@@ -3,18 +3,15 @@
 /*colors to use: #BF7636 #CF8A2B #262014 #B4C4D9 #8F9FBF*/
 /*alternate colors: #BCAAA4 #795548 #4E342E #4DB6AC #B2DFDB*/
 
-@import url('https://fonts.googleapis.com/css?family=Oswald:400,700|Roboto:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700|Roboto:400,700,900');
 
 body {
-  background-color: #B2DFDB;
+  background-color: #EBEFFF;
 }
 
-h1 p {
-  color: #262014;
-}
-
-h1 {
+h1, h2 {
   font-family: 'Oswald', sans-serif;
+  font-weight: 300;
 }
 
 p {
@@ -24,35 +21,37 @@ p {
 
 /* NAV */
 
-#ap-logo {
-  height: 45px;
-}
+/*#ap-logo {
+  height: 60px;
+  max-width: none;
+}*/
 
 .navbar-default {
   background-color: transparent;
   border: none;
+  margin-bottom: 40px;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover {
   color: #fff;
-  background-color: #4E342E;
+  background-color: #000033;
 }
 
 .navbar-default .navbar-nav>li>a {
-  color: #4E342E;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  color: #000033;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
   font-size: 1.25em;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-  color: #BCAAA4;
+  color: #0066ff;
 }
 
 a.navbar-brand {
   display: inline-block;
-  height: 40px;
-  width: 210px;
+  max-width: 300px;
+  height: auto;
 }
 
 .navbar-brand {
@@ -62,9 +61,32 @@ a.navbar-brand {
 
 /* JUMBOTRON */
 
+.jumbotron {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0066ff+0,7db9e8+100 */
+  background: #0066ff; /* Old browsers */
+  background: -moz-linear-gradient(top,  #0066ff 0%, #7db9e8 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #0066ff 0%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #0066ff 0%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0066ff', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+  height: 50vh;
+}
 
+.jumbotron h1, .jumbotron p {
+  color: #fff;
+}
 
 /* ASSETS */
+
+/*.asset-section {
+  background-color: #B3B7C4;
+}*/
+
+.asset-header {
+  display: block;
+  background-color: #000099;
+  color: #fff;
+  padding: 10px 0px;
+}
 
 .asset-row, .call-to-action-row {
   margin-top: 5%;
@@ -72,35 +94,36 @@ a.navbar-brand {
 
 .asset-flex-parent {
   display: flex;
-  height: 360px;
-  background-color: #888;
-  align-content: center;
+  height: 260px;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.asset-flex-parent h1, .asset-flex-parent p {
-  height: 100px;
-  background-color: #444;
+.asset-flex-parent h1 {
+  margin-top: 0px;
 }
 
 .asset-image {
-  border: 8px solid #4DB6AC;
+  border: 8px solid #000033;
 }
 
 .call-to-action-row {
-  background-color: #795548;
+  background-color: #000033;
   color: #fff;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
 .btn-call-to-action {
-  background-color: #4DB6AC;
+  background-color: #0066ff;
+  color: #fff;
+  border: none;
 }
 
 /* FOOTER */
 
 .footer-row {
   height: 200px;
-  background-color: #4E342E;
-  color: #fff;
+  background-color: #fff;
+  color: #000033;
 }
