@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <script src="https://use.fontawesome.com/7547582048.js"></script>
 </head>
@@ -56,26 +58,28 @@
   <!-- skills -->
 
   <div class="container">
+
     <div class="row">
       <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-4">
         <h1 class="asset-header text-center">What I have to offer:</h1>
       </div>
     </div>
-    <div class="row">
-      <div class="col-xs-12 col-md-4">
-        <img src="" alt="">
-        <h2>Mobile-Friendly Web Development</h2>
-        <p>I am proficient in creating web experiences that function seamlessly on phones, tablets, and desktops.</p>
+
+    <div class="row skill-row">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0">
+        <img src="img/icons/cube-1.png" alt="cube" class="img-responsive skill-pic center-block">
+        <h2 class="text-center">Mobile-Friendly Web Development</h2>
+        <p class="text-center">I am proficient in creating web experiences that function seamlessly on phones, tablets, and desktops.</p>
       </div>
-      <div class="col-xs-12 col-md-4">
-        <img src="" alt="">
-        <h2>Graphic Design Experience</h2>
-        <p>I have experience in brand development, typography, and photography. I earned by BFA in Graphic Design from Fresno State University.</p>
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0">
+        <img src="img/icons/paint-palette.png" alt="paint palette" class="img-responsive skill-pic center-block">
+        <h2 class="text-center">Graphic Design Experience</h2>
+        <p class="text-center">I have experience in brand development, typography, and photography. I earned by BFA in Graphic Design from Fresno State University.</p>
       </div>
-      <div class="col-xs-12 col-md-4">
-        <img src="" alt="">
-        <h2>Quality-Driven Approach</h2>
-        <p>I am a highly detail-oriented person with a healthy dose of OCD. I develop effective structures to make projects user-friendly and easily editable. </p>
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0">
+        <img src="img/icons/distort-1.png" alt="adjusting a shape's corner" class="img-responsive skill-pic center-block">
+        <h2 class="text-center">Quality-Driven Approach</h2>
+        <p class="text-center">I am a highly detail-oriented person with a healthy dose of OCD. I develop effective structures to make projects user-friendly and easily editable. </p>
       </div>
     </div>
   </div>
@@ -84,7 +88,7 @@
 
   <!-- assets -->
 
-    <div class="container asset-section">
+    <div class="container" id="asset-section">
 
       <div class="row">
         <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-4">
@@ -96,7 +100,7 @@
         <div class="col-md-4">
           <img src="http://placehold.it/350x250" class="asset-image img-responsive">
         </div>
-        <div class="col-md-7 col-md-offset-1">
+        <div class="col-md-7 col-md-offset-1 asset-text">
           <div class="asset-flex-parent">
             <h1>Asset 1</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam reprehenderit mollitia voluptatem minima aliquid ex. Enim modi possimus odio dignissimos cum unde, eius, ipsa, laboriosam repudiandae optio quidem cumque illo.</p>
@@ -108,7 +112,7 @@
         <div class="col-xs-12 col-md-4 col-md-offset-1 col-md-push-7">
           <img src="http://placehold.it/350x250" class="asset-image img-responsive">
         </div>
-        <div class="col-xs-12 col-md-7 col-md-pull-5">
+        <div class="col-xs-12 col-md-7 col-md-pull-5 asset-text">
           <div class="asset-flex-parent">
             <h1>Asset 2</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, quisquam provident ullam eaque dignissimos voluptatem odio tenetur nobis, rem quam dolore dolorem vel eum eius impedit sunt culpa ipsa itaque.</p>
@@ -132,31 +136,73 @@
 
     <!-- end assets -->
 
-    <!-- call to action -->
+    <!-- footer call to action -->
 
-    <div class="container-fluid">
-      <div class="row call-to-action-row text-center">
-        <div class="col-md-4 col-md-offset-4">
-          <h1>Call to Action</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo fugit voluptatem tempora minus animi, rerum aliquam vel itaque. Recusandae, repellat. Quaerat sunt ipsa corporis illum molestiae delectus porro laborum ad.</p>
-          <a class="btn btn-default btn-call-to-action" href="#" role="button">Action</a>
+    <div class="container-fluid" id="call-to-action">
+
+      <div class="row text-center"id="call-to-action-header">
+        <div class="col-xs-12">
+          <h1>Contact Me</h1>
+          <p>I would love to help you build your next project!</p>
         </div>
       </div>
 
-    <!-- end call to action -->
+      <div class="row contact-row">
 
-    <!-- footer -->
+        <!-- contact form -->
 
-      <div class="row footer-row">
-        <div class="col-md-4">
-          <h5>Site Map</h5>
-          <ul>
-            <li><a href="about_me.html"></a>About Me</li>
-            <li><a href="contact.html"></a>Contact</li>
-          </ul>
+        <div class="col-md-3 col-md-offset-2" id="contact-form">
+
+					<form class="form-horizontal">
+					  <div class="form-group">
+					    <label for="inputEmail3" class="col-sm-2 control-label">Name:</label>
+					    <div class="col-xs-12">
+					      <input type="text" class="form-control" id="inputName3" placeholder="Name">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-2 control-label">Email:</label>
+					    <div class="col-xs-12">
+					      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+					    </div>
+					  </div>
+						<div class="form-group">
+					    <label for="inputPassword3" class="col-sm-2 control-label">Subject:</label>
+					    <div class="col-xs-12">
+					      <input type="text" class="form-control" id="inputSubject3" placeholder="Subject">
+					    </div>
+					  </div>
+						<div class="form-group">
+					    <label for="inputMessage3" class="col-sm-2 control-label">Message:</label>
+					    <div class="col-xs-12">
+					      <textarea class="form-control" rows="3"></textarea>
+					    </div>
+					  </div>
+
+					  <div class="form-group">
+					    <div class="col-sm-10">
+					      <div class="checkbox">
+					        <label>
+										<div>
+											<input type="checkbox"> I'm not a robot
+										</div>
+					        </label>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <div class="col-sm-offset-3 col-sm-6">
+					      <button type="submit" class="btn btn-default center-block">Send Message</button>
+							</div>
+							<div class="col-sm-12">
+								<p class="text-center" id="fine-print">All fields marked <span id="asterisk">*</span> are mandatory.</p>
+							</div>
+						</div>
+					</form>
+
         </div>
-        <div class="col-md-4">
-          <h5>Follow Me</h5>
+        <div class="col-md-4 col-md-offset-1">
+          <h5>Andrew Pethoud</h5>
           <i class="fa fa-twitter" aria-hidden="true"></i>
           <i class="fa fa-linkedin" aria-hidden="true"></i>
         </div>
