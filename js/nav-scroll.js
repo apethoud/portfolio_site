@@ -1,5 +1,5 @@
 $(window).scroll(function () {
-if ($(window).scrollTop() >= 50) {
+if ($(window).scrollTop() >= 650) {
 $('.navbar').css('visibility','visible');
 } else {
 $('.navbar').css('visibility','hidden');

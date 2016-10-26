@@ -82,8 +82,14 @@ a.navbar-brand {
 /*IMAGES CAROUSEL*/
 
 .slider-image, #logo-punch {
-  width: 100%;
+  width: 100vw;
 }
+
+/*@media only screen and (min-width: 1074px) {
+  .slider-image, #logo-punch {
+    width: 1074px;
+  }
+}*/
 
 /* JUMBOTRON */
 
@@ -99,6 +105,24 @@ a.navbar-brand {
 
 .jumbotron h1, .jumbotron p {
   color: #fff;
+}
+
+/*IDENTITY STATEMENT*/
+
+#identity-statement {
+  font-weight: 700;
+  font-size: 48px;
+  padding-bottom: 100px;
+}
+
+.identity-callout {
+  color: #0066ff;
+}
+
+@media only screen and (max-width: 990px) {
+  #identity-statement {
+    font-size: 36px;
+  }
 }
 
 /*SKILLS*/
@@ -159,8 +183,17 @@ a.navbar-brand {
   font-weight: 700;
 }
 
+.asset-flex-parent p {
+  font-size: 18px;
+  font-style: italic;
+}
+
 .asset-image {
   border: 8px solid #000033;
+}
+
+.asset-image:hover {
+  border: 8px solid #0066ff;
 }
 
 @media only screen and (max-width: 990px) {
@@ -177,6 +210,12 @@ a.navbar-brand {
   .asset-image, .asset-flex-parent h1, .asset-flex-parent p {
     margin-left: auto;
     margin-right: auto;
+  }
+  .asset-flex-parent p {
+    text-align: center;
+  }
+  .asset-text {
+    margin-top: 50px;
   }
   /*.asset-image {
     margin-bottom: 100px;
