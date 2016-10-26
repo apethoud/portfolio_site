@@ -26,10 +26,16 @@ p {
   max-width: none;
 }*/
 
+.navbar-fixed-top {
+      -webkit-backface-visibility: hidden;
+}
+
 .navbar-default {
-  background-color: transparent;
+  background-color: #EBEFFF;
   border: none;
   margin-bottom: 40px;
+  visibility: hidden;
+  position: fixed;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover {
@@ -62,10 +68,22 @@ a.navbar-brand {
   }
 }
 
-/*.navbar-brand {
-  background-image: url("../img/name-01.png");
-  background-repeat: no-repeat;
-}*/
+/* BANNER LOGO PUNCH */
+
+#logo-punch-box {
+  position: absolute;
+  z-index: 5000;
+}
+
+#punch-column {
+  padding: 0px;
+}
+
+/*IMAGES CAROUSEL*/
+
+.slider-image, #logo-punch {
+  width: 100%;
+}
 
 /* JUMBOTRON */
 
