@@ -222,9 +222,8 @@ a.navbar-brand {
     height: 120px;
     margin-bottom: 75px;
   }
-  .asset-image, .asset-flex-parent a, .asset-flex-parent p {
-    margin-left: auto;
-    margin-right: auto;
+  .asset-image, .asset-flex-parent h1, .asset-flex-parent p {
+    text-align: center;
   }
   .asset-flex-parent p {
     text-align: center;
