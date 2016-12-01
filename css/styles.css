@@ -1,12 +1,11 @@
 /* GENERAL */
 
-/*colors to use: #BF7636 #CF8A2B #262014 #B4C4D9 #8F9FBF*/
-/*alternate colors: #BCAAA4 #795548 #4E342E #4DB6AC #B2DFDB*/
+/* COLORS #B2DF00 #004269 */
 
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700|Roboto:400,700,900');
 
 body {
-  background-color: #EBEFFF;
+  background-color: #B2DF00;
 }
 
 h1, h2, h3 {
@@ -19,12 +18,15 @@ p {
   font-size: 16px;
 }
 
-/* NAV */
+.angle-column {
+  padding-left: 0px;
+}
 
-/*#ap-logo {
-  height: 60px;
-  max-width: none;
-}*/
+.section-header {
+  font-weight: 700;
+}
+
+/* NAV */
 
 .navbar-fixed-top {
       -webkit-backface-visibility: hidden;
@@ -36,6 +38,7 @@ p {
   margin-bottom: 40px;
   visibility: hidden;
   position: fixed;
+  z-index: 6000;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover {
@@ -125,7 +128,25 @@ a.navbar-brand {
   }
 }
 
+/*SECTION BREAK ANGLE*/
+
+#break-angle--skills {
+  width: 0;
+  height: 0;
+  border-bottom: 10vw solid #004269;
+  border-left: 100vw solid transparent;
+  position: absolute;
+}
+
 /*SKILLS*/
+
+.skill-section {
+  background-color: #004269;
+}
+
+.skill-section h1 {
+  color: #B2DF00;
+}
 
 .skill-pic {
   height: 120px;
@@ -154,18 +175,25 @@ a.navbar-brand {
   }
 }
 
+/*SECTION BREAK ANGLE*/
+
+#break-angle--assets {
+  width: 0;
+  height: 0;
+  border-top: 25vw solid #004269;
+  border-left: 100vw solid transparent;
+  position: absolute;
+}
+
 /* ASSETS */
 
 #asset-section {
-  padding-top: 70px;
+  margin-top: 220px;
   margin-bottom: 100px;
 }
 
-.asset-header {
-  display: block;
-  background-color: #000099;
-  color: #fff;
-  padding: 10px 0px;
+#asset-section h1 {
+  color: #004269;
 }
 
 .asset-row, .call-to-action-row {
@@ -236,17 +264,27 @@ a.navbar-brand {
   }*/
 }
 
+/*SECTION BREAK ANGLE*/
+
+#break-angle--contact {
+  width: 0;
+  height: 0;
+  border-bottom: 5vw solid #004269;
+  border-right: 100vw solid transparent;
+  position: absolute;
+}
+
 /*FOOTER CALL TO ACTION*/
 
 #call-to-action {
-  background-color: #000033;
+  background-color: #004269;
   color: #fff;
-  padding-top: 50px;
+  margin-top: 10px;
   padding-bottom: 50px;
 }
 
 #call-to-action-header h1 {
-  font-weight: 700;
+  color: #B2DF00;
 }
 
 #contact-box {
