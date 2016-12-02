@@ -13,6 +13,10 @@ h1, h2, h3 {
   font-weight: 300;
 }
 
+h2, h3 {
+  color: #fff;
+}
+
 p {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -133,18 +137,19 @@ a.navbar-brand {
 #break-angle--skills {
   width: 0;
   height: 0;
-  border-bottom: 10vw solid #004269;
-  border-left: 100vw solid transparent;
+  border-top: 10vw solid #B2DF00;
+  border-right: 100vw solid transparent;
   position: absolute;
 }
 
 /*SKILLS*/
 
-.skill-section {
+#skill-section {
   background-color: #004269;
+  padding-top: 100px;
 }
 
-.skill-section h1 {
+#skill-section h1 {
   color: #B2DF00;
 }
 
@@ -152,26 +157,36 @@ a.navbar-brand {
   height: 120px;
 }
 
-.skill-row {
+#skill-row {
   margin-top: 50px;
   margin-bottom: 30px;
 }
 
-.skill-row h2 {
+#skill-row h2 {
   margin-top: 30px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
-.skill-row p {
+#skill-row p {
+  color: #fff;
   margin-top: 20px;
 }
 
+.skill-group {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 @media only screen and (max-width: 990px) {
-  .skill-row {
+  #skill-row {
     margin-bottom: 0px;
   }
-  .skill-row p {
+  #skill-row p {
     margin-bottom: 100px;
+  }
+  .skill-group {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
@@ -188,7 +203,7 @@ a.navbar-brand {
 /* ASSETS */
 
 #asset-section {
-  margin-top: 220px;
+  margin-top: 205px;
   margin-bottom: 100px;
 }
 
@@ -219,7 +234,7 @@ a.navbar-brand {
 
 .asset-flex-parent h1 {
   margin-top: 0px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .asset-flex-parent h1:hover {
@@ -269,8 +284,8 @@ a.navbar-brand {
 #break-angle--contact {
   width: 0;
   height: 0;
-  border-bottom: 5vw solid #004269;
-  border-right: 100vw solid transparent;
+  border-top: 5vw solid #B2DF00;
+  border-left: 100vw solid transparent;
   position: absolute;
 }
 
@@ -279,7 +294,7 @@ a.navbar-brand {
 #call-to-action {
   background-color: #004269;
   color: #fff;
-  margin-top: 10px;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 
@@ -295,7 +310,7 @@ a.navbar-brand {
 }
 
 #contact-box>:first-child {
-  font-weight: 700;
+  font-weight: 400;
   margin-top: 0px;
 }
 
@@ -319,4 +334,8 @@ a.navbar-brand {
 #contact-box h3 a:hover, #social-icons a i:hover {
   color: #000099;
   text-decoration: none;
+}
+
+#footnote {
+  margin-top: 100px;
 }
