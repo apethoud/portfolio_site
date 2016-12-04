@@ -33,12 +33,13 @@ p {
 /* NAV */
 
 .navbar-fixed-top {
-      -webkit-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .navbar-default {
-  background-color: #EBEFFF;
+  background-color: #B2DF00;
   border: none;
+  box-shadow: 0px 2px 20px;
   margin-bottom: 40px;
   visibility: hidden;
   position: fixed;
@@ -75,6 +76,14 @@ a.navbar-brand {
   }
 }
 
+.navbar-default .navbar-toggle {
+  border-color: #004269;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: #004269;
+}
+
 /* BANNER LOGO PUNCH */
 
 #logo-punch-box {
@@ -98,25 +107,10 @@ a.navbar-brand {
   }
 }*/
 
-/* JUMBOTRON */
-
-.jumbotron {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0066ff+0,7db9e8+100 */
-  background: #0066ff; /* Old browsers */
-  background: -moz-linear-gradient(top,  #0066ff 0%, #7db9e8 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  #0066ff 0%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  #0066ff 0%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0066ff', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
-  height: 50vh;
-}
-
-.jumbotron h1, .jumbotron p {
-  color: #fff;
-}
-
 /*IDENTITY STATEMENT*/
 
 #identity-statement {
+  color: #2E2413;
   font-weight: 700;
   font-size: 48px;
   padding-bottom: 100px;
@@ -146,7 +140,13 @@ a.navbar-brand {
 
 #skill-section {
   background-color: #004269;
-  padding-top: 100px;
+  padding-top: 10vw;
+}
+
+@media only screen and (min-width: 991px) {
+  #skill-section {
+    padding-top: 7vw;
+  }
 }
 
 #skill-section h1 {
@@ -182,7 +182,7 @@ a.navbar-brand {
     margin-bottom: 0px;
   }
   #skill-row p {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
   }
   .skill-group {
     padding-left: 0px;
@@ -203,8 +203,14 @@ a.navbar-brand {
 /* ASSETS */
 
 #asset-section {
-  margin-top: 205px;
+  margin-top: 20vw;
   margin-bottom: 100px;
+}
+
+@media only screen and (min-width: 991px) {
+  #asset-section {
+    margin-top: 14vw;
+  }
 }
 
 #asset-section h1 {
@@ -294,8 +300,14 @@ a.navbar-brand {
 #call-to-action {
   background-color: #004269;
   color: #fff;
-  padding-top: 50px;
+  padding-top: 5vw;
   padding-bottom: 50px;
+}
+
+@media only screen and (min-width: 991px) {
+  #call-to-action {
+    padding-top: 3vw;
+  }
 }
 
 #call-to-action-header h1 {
@@ -303,8 +315,8 @@ a.navbar-brand {
 }
 
 #contact-box {
-  background-color: #0066ff;
-  border: 8px solid #000099;
+  /*background-color: #0066ff;
+  border: 8px solid #000099;*/
   margin-top: 15px;
   padding: 25px 0px;
 }
