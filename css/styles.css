@@ -1,12 +1,11 @@
 /* GENERAL */
 
-/*colors to use: #BF7636 #CF8A2B #262014 #B4C4D9 #8F9FBF*/
-/*alternate colors: #BCAAA4 #795548 #4E342E #4DB6AC #B2DFDB*/
+/* COLORS #B2DF00 #004269 */
 
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700|Roboto:400,700,900');
 
 body {
-  background-color: #EBEFFF;
+  background-color: #B2DF00;
 }
 
 h1, h2, h3 {
@@ -14,28 +13,37 @@ h1, h2, h3 {
   font-weight: 300;
 }
 
+h2, h3 {
+  color: #fff;
+}
+
 p {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 
+.angle-column {
+  padding-left: 0px;
+}
+
+.section-header {
+  font-weight: 700;
+}
+
 /* NAV */
 
-/*#ap-logo {
-  height: 60px;
-  max-width: none;
-}*/
-
 .navbar-fixed-top {
-      -webkit-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .navbar-default {
-  background-color: #EBEFFF;
+  background-color: #B2DF00;
   border: none;
+  box-shadow: 0px 2px 20px;
   margin-bottom: 40px;
   visibility: hidden;
   position: fixed;
+  z-index: 6000;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover {
@@ -68,6 +76,14 @@ a.navbar-brand {
   }
 }
 
+.navbar-default .navbar-toggle {
+  border-color: #004269;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: #004269;
+}
+
 /* BANNER LOGO PUNCH */
 
 #logo-punch-box {
@@ -91,25 +107,10 @@ a.navbar-brand {
   }
 }*/
 
-/* JUMBOTRON */
-
-.jumbotron {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0066ff+0,7db9e8+100 */
-  background: #0066ff; /* Old browsers */
-  background: -moz-linear-gradient(top,  #0066ff 0%, #7db9e8 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  #0066ff 0%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  #0066ff 0%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0066ff', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
-  height: 50vh;
-}
-
-.jumbotron h1, .jumbotron p {
-  color: #fff;
-}
-
 /*IDENTITY STATEMENT*/
 
 #identity-statement {
+  color: #2E2413;
   font-weight: 700;
   font-size: 48px;
   padding-bottom: 100px;
@@ -125,47 +126,95 @@ a.navbar-brand {
   }
 }
 
+/*SECTION BREAK ANGLE*/
+
+#break-angle--skills {
+  width: 0;
+  height: 0;
+  border-top: 10vw solid #B2DF00;
+  border-right: 100vw solid transparent;
+  position: absolute;
+}
+
 /*SKILLS*/
+
+#skill-section {
+  background-color: #004269;
+  padding-top: 10vw;
+}
+
+@media only screen and (min-width: 991px) {
+  #skill-section {
+    padding-top: 7vw;
+  }
+}
+
+#skill-section h1 {
+  color: #B2DF00;
+}
 
 .skill-pic {
   height: 120px;
 }
 
-.skill-row {
+#skill-row {
   margin-top: 50px;
   margin-bottom: 30px;
 }
 
-.skill-row h2 {
+#skill-row h2 {
   margin-top: 30px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
-.skill-row p {
+#skill-row p {
+  color: #fff;
   margin-top: 20px;
 }
 
+.skill-group {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 @media only screen and (max-width: 990px) {
-  .skill-row {
+  #skill-row {
     margin-bottom: 0px;
   }
-  .skill-row p {
-    margin-bottom: 100px;
+  #skill-row p {
+    margin-bottom: 80px;
   }
+  .skill-group {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+/*SECTION BREAK ANGLE*/
+
+#break-angle--assets {
+  width: 0;
+  height: 0;
+  border-top: 25vw solid #004269;
+  border-left: 100vw solid transparent;
+  position: absolute;
 }
 
 /* ASSETS */
 
 #asset-section {
-  padding-top: 70px;
+  margin-top: 20vw;
   margin-bottom: 100px;
 }
 
-.asset-header {
-  display: block;
-  background-color: #000099;
-  color: #fff;
-  padding: 10px 0px;
+@media only screen and (min-width: 991px) {
+  #asset-section {
+    margin-top: 14vw;
+  }
+}
+
+#asset-section h1 {
+  color: #004269;
 }
 
 .asset-row, .call-to-action-row {
@@ -191,7 +240,7 @@ a.navbar-brand {
 
 .asset-flex-parent h1 {
   margin-top: 0px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .asset-flex-parent h1:hover {
@@ -236,28 +285,44 @@ a.navbar-brand {
   }*/
 }
 
+/*SECTION BREAK ANGLE*/
+
+#break-angle--contact {
+  width: 0;
+  height: 0;
+  border-top: 5vw solid #B2DF00;
+  border-left: 100vw solid transparent;
+  position: absolute;
+}
+
 /*FOOTER CALL TO ACTION*/
 
 #call-to-action {
-  background-color: #000033;
+  background-color: #004269;
   color: #fff;
-  padding-top: 50px;
+  padding-top: 5vw;
   padding-bottom: 50px;
 }
 
+@media only screen and (min-width: 991px) {
+  #call-to-action {
+    padding-top: 3vw;
+  }
+}
+
 #call-to-action-header h1 {
-  font-weight: 700;
+  color: #B2DF00;
 }
 
 #contact-box {
-  background-color: #0066ff;
-  border: 8px solid #000099;
+  /*background-color: #0066ff;
+  border: 8px solid #000099;*/
   margin-top: 15px;
   padding: 25px 0px;
 }
 
 #contact-box>:first-child {
-  font-weight: 700;
+  font-weight: 400;
   margin-top: 0px;
 }
 
@@ -281,4 +346,8 @@ a.navbar-brand {
 #contact-box h3 a:hover, #social-icons a i:hover {
   color: #000099;
   text-decoration: none;
+}
+
+#footnote {
+  margin-top: 100px;
 }
