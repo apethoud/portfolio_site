@@ -211,21 +211,14 @@ a.navbar-brand {
   #asset-section {
     margin-top: 14vw;
   }
+
+  .asset-row, .call-to-action-row {
+    margin-top: 5%;
+  }
 }
 
 #asset-section h1 {
   color: #004269;
-}
-
-.asset-row, .call-to-action-row {
-  margin-top: 5%;
-}
-
-.asset-flex-parent {
-  display: flex;
-  height: 260px;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .asset-link {
@@ -238,22 +231,12 @@ a.navbar-brand {
   color: inherit;
 }
 
-.asset-flex-parent h1 {
-  margin-top: 0px;
-  font-weight: 400;
-}
-
-.asset-flex-parent h1:hover {
-  color: #0066ff;
-}
-
-.asset-flex-parent p {
-  font-size: 18px;
-  font-style: italic;
-}
-
 .asset-image {
   box-shadow: 0px 10px 50px #000000;
+}
+
+#fishy {
+  background-color: #fff;
 }
 
 .asset-image:hover {
@@ -261,11 +244,11 @@ a.navbar-brand {
 }
 
 @media only screen and (max-width: 990px) {
-  .asset-row {
-    margin-top: 50px;
+  #asset-section h1 {
+    margin-bottom: 50px;
   }
   .asset-image {
-    margin-bottom: 25px;
+    margin-bottom: 50px;
   }
   .asset-flex-parent {
     height: 120px;
